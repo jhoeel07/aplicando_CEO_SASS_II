@@ -24,3 +24,8 @@ en la Descripcion lo siguiente: Informacion sobre JHH Style, quienes somos,donde
 Se modifico el nombre del title a: JJHH Style - Ayuda
 
 
+
+Se aplico "extend" en la pagina "main.scss"
+Se aplico "MAPS" y "mixin" en la pagina "Desktop.scss"
+
+
