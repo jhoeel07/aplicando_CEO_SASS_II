@@ -21,9 +21,25 @@
         width: 100%;
         color: rgb(255, 255, 255);
     }
-
+// ---------------ACA SE APLICA MAPSSS---------------------------------------------
  
+    $coloresLetra:(
 
+     h1: brown,
+     h2:black,
+     h3:aquamarine,
+
+    );
+
+    @each $letra,$coloresLetra in $coloresLetra {
+
+        #{$letra} {
+
+            color:$coloresLetra ;
+            
+        }
+        
+    }
     .segundo_menu{
         grid-area: segundo_menu;
         flex-direction: column;
