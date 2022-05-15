@@ -1,0 +1,72 @@
+@media screen and (min-width:768px) {
+
+    .contenedorPadreSupremo{
+
+    
+        grid-template-areas:
+
+         "navPrincipal navPrincipal navPrincipal"
+         "header header header"
+         "segundo_menu main main"
+         "nav_secu nav_secu nav_secu";
+        
+       
+    }
+
+    .header{
+
+        font-size: large;
+
+    }
+    .mas_vendidos_fotos{
+
+        width: 350px;
+   }
+
+    .segundo_menu{
+
+        flex-direction: column;
+        justify-content: start;
+        border-right: solid #000;
+        background-image:$imagenFondo-Segundo-Menu;
+
+        button{
+            margin: 20px 0px 20px 0px;
+            z-index: 10;
+            border-radius: 0;
+            font-size: 20px;
+            height: 50px;
+            width: 100%;
+    
+        }
+
+
+        h3{
+
+            font-size: 50px;
+            margin-top: 20px;
+    
+        }
+
+        .VOLVER{
+
+            display: block;
+            position: fixed;
+            z-index: 1;
+        
+        }
+
+    }
+    /*-----------------parte de la Pagina Mejor del verano-------------------*/
+    .cajaPrincipalmodelosVerano{
+        align-items: center;
+    }
+    .caja_Formulario{
+
+        font-size: 30px;
+
+    }
+
+
+
+}

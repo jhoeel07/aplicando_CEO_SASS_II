@@ -1,0 +1,858 @@
+* {
+    padding: 0; /*HACER ESTO SIEMPRE POR QUE ES RECOMENDABLE*/
+    margin: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    
+}
+
+h1{
+
+    color: brown;
+}
+.contenedorPadreSupremo{
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    display: grid;
+
+    grid-template-areas:
+    "navPrincipal"
+    "header"
+    "segundo_menu"
+    "main"
+    "nav_secu";
+  
+    color: rgb(236, 214, 185);
+    font-style: italic;
+   width: 100%;
+}
+
+.navPrincipal{
+
+   grid-area: navPrincipal;
+
+
+}
+
+
+.logo2{
+
+    display: none;
+}
+
+
+
+
+.header{
+
+
+    grid-area: header;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+    background-repeat: repeat;
+    padding: 30px;
+    font-size: small;
+
+
+}
+
+
+.main{
+
+    grid-area: main;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+    font-size: larger;
+    color: rgb(236, 214, 185);
+    text-align: center;
+ 
+
+
+}
+
+
+
+
+/*--------estilos de mi segundo menu-----------*/
+
+.segundo_menu{
+
+
+    grid-area: segundo_menu;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+  
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: relative;
+}
+.VOLVER{
+
+    display: none;
+
+}
+
+.segundo_menu img{
+
+    display: none;
+}
+
+ button{
+
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+   
+    font-size: 10px;
+    height: auto;
+    width: 50px;
+
+
+} 
+
+/*----------------------- BOOTSTRAP------------------------- */
+
+.accordion-button {
+
+    background: chartreuse;
+}
+
+/*ESPACIOS ENTRE LAS FILAS DE LA PARETE DE SNAKERS YEZZE DRAGON BALL*/
+
+.row-yeze-3{
+
+    margin-top: 10px;
+  
+}
+
+
+
+
+
+/*----------------------- FIN BOOTSTRAP------------------------- */
+
+
+
+/* ----------------------fin--------------------------- */
+
+.nav_secu {
+
+    grid-area: nav_secu ;
+}
+
+
+/*---------------- Estilos al main----------------------------*/
+
+/*---------------estilo a la seccion Mas Vendido--------------*/
+
+
+
+/*  YA NO FUNCIONARIA POR QUE APLIQUE EL BOOSTRAP DEL CARUSEL DE IMAGENES.mas_vendido {  
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+} */
+.titulos_MainPrincipal{
+
+    margin-top: 20px;
+}
+
+
+
+.mas_vendidos_fotos{
+
+    
+    margin-top: 40PX;
+
+     width: 300px;
+    border-radius: 10px;
+    border: solid black 5px;
+
+   font-weight: bold;
+
+ 
+ 
+}
+
+
+
+
+
+.titulos_MainPrincipal{
+
+    text-align: center;
+    color: brown;
+
+}
+
+/* color de los precios */
+.precios{
+
+    color: greenyellow;
+}
+
+
+/*--------------estilo a la seccion Sneakers modo celular-------------*/
+
+/* ESTO YA NO SIRVE POR QUE APLIQUE GRID DE BOOSTRAP.sneakers{
+
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+  
+
+} 
+
+
+.tabla__sneakers{
+
+   
+    width: 250px;
+    
+}*/
+
+
+/*--------------estilo a la seccion Gorras-------------*/
+
+/* ESTO YA NO SIRVE POR QUE APLIQUE GRID DE BOOSTRAP.gorras{
+
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+
+
+}
+.table__gorras{
+    text-align: center;
+   width: 250px;
+
+}
+*/
+
+
+
+/*-------------este son los estilos de la seccion FOOTER---------------------*/
+.nav_secu{
+    
+   
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo_negro_ladri.jpg");
+    background-repeat: repeat;
+    border: solid  rgb(0, 0, 0) 5px ;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  
+
+}
+.nav_secu ul li a{
+    color: greenyellow;
+    text-decoration: none;
+
+
+}
+
+
+.nav_cont{
+    list-style: none;
+
+}
+.columnasFuter p{
+    color: brown;
+}
+
+
+
+/*---------------FIN estilo a la seccion Mas Vendido--------------*/
+
+
+
+
+
+/*-----------------aca empieza la Pagina de Sneakers--------------------*/
+
+
+
+.seccion_Jordan{
+
+    display: flex;
+    flex-flow: column wrap;
+  
+    align-items: center;
+
+}
+.portada{
+    display: none;
+
+}
+
+.otrasMarcas{
+
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+
+.cajaJordan1{
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    border: solid black 5px;
+}
+.otrasImagZapatilla{
+
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    border: solid black 5px;
+}
+
+
+/* ------------------------------GIF del fondoooooooo especial------------------------ */
+
+
+.fondo_colores_trasnision{
+
+    width: 100%;
+
+    background-image: url("../imag/gif/estrellas-entre-las-nubes.gif");
+  background-size: cover;
+
+}
+.fondo_colores_trasnision .container{
+
+    padding: 30px;
+
+
+
+}
+
+
+
+/*-----------------aca TERMINA la Pagina de Sneakers--------------------*/
+
+
+
+
+
+
+/*-----------------parte de la Pagina Mejor del verano-------------------*/
+.cajaPrincipalmodelosVerano{
+
+ 
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+.VeranoModelos{
+    
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    font-size: 25px;
+    border: solid black 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    z-index: 20;
+
+}
+
+
+.caja_Formulario{ /*sirve tanto para verano como para la de invierno*/
+
+    margin-top: 40px;
+  text-align: center;
+  color: greenyellow;
+  background-color: rgb(0, 0, 0);
+
+}
+
+/*-----------------parte de la Pagina Mejor del Invierno-------------------*/
+
+
+.cajaPrincipalmodelosInvierno{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+}
+.contenedor__ModelosInvierno{
+
+    margin-top: 40PX;
+    width: 410px;
+    height: auto;
+    border-radius: 10px;
+    border: solid black 5px;
+    z-index: 20;
+
+}
+
+
+/*-----------------parte de la Pagina de la info-------------------*/
+.textoAYUDA{
+    
+
+    color: rgb(255, 255, 255);
+
+    font-size: 25px;
+ 
+    font-weight: bold;
+ 
+}
+.texto_info{
+
+    background-color: #000;
+}
+.listaPuestosDisp {
+
+   list-style: none;
+}
+.trabaja_con_nosotros{
+    margin-top: 20px;
+    background-image: url("../imag/gif/cielo-estrellado.gif");
+}
+
+
+
+
+
+
+/* -------------------------------------media queris--------------------------------------------------------- */
+
+
+@media screen and (min-width:425px) {
+
+
+
+    .segundo_menu h3{
+
+       margin-right: 30px;
+
+    }
+
+    button{
+  
+        border-radius: 0;
+        font-size: 10px;
+        height: 20px;
+        width: 100%;
+    
+    
+    }
+    .cajaPrincipalmodelosVerano{
+
+        flex-flow: column wrap;
+    
+        align-items:center ;
+    }
+    .cajaPrincipalmodelosInvierno{
+    
+        flex-flow: column wrap;
+
+    }
+
+
+    
+
+
+/* --------------------------------ACA VA LAS MEDIA CUERIS DE LA tablet ---------------------------------------*/
+
+@media screen and (min-width:768px) {
+    
+
+    .contenedorPadreSupremo{
+
+    
+        grid-template-areas:
+
+         "navPrincipal navPrincipal navPrincipal"
+         "header header header"
+         "segundo_menu main main"
+         "nav_secu nav_secu nav_secu";
+        
+       
+    }
+
+    
+    .header{
+
+        font-size: large;
+
+    }
+
+ /*---------------- segundo menu modo tableeet-------------------- */
+    .segundo_menu{
+
+        flex-direction: column;
+        justify-content: start;
+        border-right: solid #000;
+        background-image: url(../imag/menu/fondo.png);
+
+    }
+    .segundo_menu button{
+        margin: 20px 0px 20px 0px;
+
+
+    }
+
+    .VOLVER{
+
+        display: block;
+    
+    }
+
+    .segundo_menu h3{
+
+        font-size: 50px;
+
+    }
+    .VOLVER{
+
+        position: fixed;
+        z-index: 1;
+        
+    }
+    .segundo_menu button{
+        
+        z-index: 10;
+        
+    }
+    .segundo_menu h3{
+        margin-top: 20px;
+       
+    }
+
+
+    .mas_vendidos_fotos{
+
+        width: 350px;
+   }
+
+
+    /*-----------------parte de la Pagina Mejor del verano-------------------*/
+    .cajaPrincipalmodelosVerano{
+        align-items: center;
+    }
+    .caja_Formulario{
+
+        font-size: 30px;
+
+    }
+
+}
+
+
+}
+
+
+
+/* --------------------ACA VA LA PARTE DE LA COMPU QUE VA ATENER UN LOGO EN EL HEAD---------------------- */
+
+@media screen and (min-width:1024px) {
+
+    .contenedorPadreSupremo{
+
+    
+        grid-template-areas:
+
+         "navPrincipal navPrincipal navPrincipal"
+         "logo2 header header"
+         "segundo_menu main main"
+         "nav_secu nav_secu nav_secu";
+
+    }
+
+    button{
+
+        border-radius: 0;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+    }
+    /* ----------------------------------------MODIFICACIONES A BOOSTRAP----------------------------------- */
+    .carousel {
+      
+        width: 400px; 
+        height:auto; 
+        margin: auto;
+        transition:2s ease;
+       }
+       .container{
+
+        margin-top: 20PX;
+       }
+    .accordion-button {
+
+        background: chartreuse;
+    }
+    .accordion-body{
+
+        background: rgb(0, 0, 0);
+
+    }
+    .accordion{
+
+        margin-bottom: 20px ;
+    }
+
+ /* ----------------------------------------MODIFICACIONES A BOOSTRAP FIN ----------------------------------- */
+  
+    .caja_Formulario{
+
+        font-size: 15px;
+
+    }
+ 
+  
+    .mas_vendidos_fotos{
+
+         width: 400px;
+     
+    }
+
+
+
+    /*--------------estilo a la seccion Sneakers-------------*/
+
+
+
+
+    /*--------------estilo a la seccion Gorras-------------*/
+
+    .gorras{
+
+        flex-flow: wrap row;
+    
+        justify-content: space-around;
+
+    }
+    .gorras img{
+
+        width:380px;
+        height:360px;
+    }
+
+
+    /* ------------------------------pagina SNEAKERS-----------------------------*/
+
+    .table{
+        margin-top: 20px;
+    }
+
+    .header{
+
+        font-size: xx-large;
+
+    }
+
+    .seccion_Jordan{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    
+    }
+    .otrasMarcas{
+    flex-flow: row wrap;
+      justify-content: space-evenly;
+    
+    }
+    /* portada del la pagina de sneakers */
+    .portada{
+        display: block;
+        
+        margin-top: 40px;
+    
+    }
+
+    .cajaJordan1{
+
+        transition: all 0.5s ease-in-out;
+    }
+    .portada img{
+
+        transition: all 1s ease-in-out;
+    }
+
+
+
+    .portada img:hover{
+
+        transform: rotate(360deg);
+
+
+    }
+
+
+
+
+
+        /*-----------------parte de la Pagina Mejor del verano-------------------*/
+        .cajaPrincipalmodelosVerano{
+
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+          
+        
+    
+        }
+    
+        .cajaPrincipalmodelosInvierno{
+    
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+    
+    
+        }
+
+        /* footer agregadoo */
+
+        .nav_secu{
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+
+    
+    
+
+        /*-------------------- transisiones  ------------------------------*/
+
+    .contenedor__ModelosInvierno{
+        transition: all 0.5s ease-in-out;
+    }
+
+    .VeranoModelos{
+
+        transition: all 0.5s ease-in-out;
+    }
+    .otrasImagZapatilla{
+
+        transition: all 0.5s ease-in-out;
+    }
+    /* ESTO YA NO SIRVE POR QUE LAS FOTOS ESTAN EN UN CARRUSEL.mas_vendidos_fotos{
+        transition: all 0.5s ease-in-out;
+        
+    } */
+
+    .row-yeze-2 img{
+        transition: all 0.5s ease-in-out;
+
+    }
+    .row-yeze-3 img{
+
+        transition: all 0.5s ease-in-out;
+    }
+
+      /*----------------------------- animacionnn--------------------- */
+      .logo2{
+
+        display: block;
+        grid-area: logo2;
+
+        animation-name: movimiento-logo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+
+
+    }
+
+      @keyframes movimiento-logo {
+
+
+
+          25%{
+
+            transform: scale(1.1);
+
+          }
+
+          50%{
+
+            transform: rotateX(360deg);
+          }
+      }
+    
+ 
+
+    /*-------------------------- partes hover ----------------*/
+    
+
+    .cajaJordan1:hover,.mas_vendidos_fotos:hover{
+
+        border-color: chartreuse;
+        transform: scale(1.1);
+    }
+
+    .otrasImagZapatilla:hover{
+    
+        border-color: chartreuse;
+        transform: scale(1.1);
+    }
+    .VeranoModelos:hover{
+
+        border-color: chartreuse;
+        transform: scale(1.1);
+        z-index: 30;
+ 
+    }
+    .contenedor__ModelosInvierno:hover{
+
+        border-color: chartreuse;
+        transform: scale(1.1);
+        z-index: 30;
+
+    }
+    .row-yeze-3 img:hover{
+
+        border-color: chartreuse;
+        transform: scale(1.1);
+    }
+
+    .row-yeze-2 img:hover{
+        border-color: chartreuse;
+        transform: scale(1.1);
+    
+    }
+
+    /*------------------------------ PAGINA AYUDAAA----------------------------- */
+
+
+/* ACA ESTA EL FONDDO DE TODOO */
+
+body{
+  
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    background-repeat: repeat;
+}
+
+
+}

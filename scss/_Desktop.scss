@@ -1,0 +1,278 @@
+@media screen and (min-width:1024px) {
+
+    .contenedorPadreSupremo{
+
+
+        grid-template-areas:
+
+         "navPrincipal navPrincipal navPrincipal"
+         "logo2 header header"
+         "segundo_menu main main"
+         "nav_secu nav_secu nav_secu";
+
+    }
+    .segundo_menu{
+        grid-area: segundo_menu;
+        flex-direction: column;
+        justify-content: start;
+        border-right: solid #000;
+        background-image: url(../imag/menu/fondo.png);
+        button{
+            background: rgb(0,0,0);
+            background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
+            border-radius: 0;
+            font-size: 20px;
+            height: 50px;
+            width: 100%;
+        }
+
+    }
+    button{
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
+        border-radius: 0;
+        font-size: 20px;
+        height: 50px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+    }
+   /* ----------------------------------------MODIFICACIONES A BOOSTRAP----------------------------------- */
+   .header{
+
+    font-size: xx-large;
+
+}
+
+ /*----------------------------- animacionnn--------------------- */
+ .logo2{
+
+    display: block;
+    grid-area: logo2;
+
+    animation-name: movimiento-logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+
+
+}
+
+  @keyframes movimiento-logo {
+
+
+
+      25%{
+
+        transform: scale(1.1);
+
+      }
+
+      50%{
+
+        transform: rotateX(360deg);
+      }
+  }
+/*----------------------------- FINAL animacionnn--------------------- */
+.main{
+
+            
+    .carousel {
+      
+        width: 400px; 
+        height:auto; 
+        margin: auto;
+        transition:2s ease;
+    
+    
+    
+       }
+       .container{
+    
+        margin-top: 20PX;
+       }
+    
+    
+    .accordion{
+    
+        margin-bottom: 20px ;
+        .accordion-body{
+    
+            background: rgb(0, 0, 0);
+        
+        }
+        .accordion-button {
+    
+            background: chartreuse;
+        }
+    
+    }
+    
+    /* ----------------------------------------MODIFICACIONES A BOOSTRAP FIN ----------------------------------- */
+    
+    .caja_Formulario{
+
+        font-size: 15px;
+    
+    }
+    .table{
+
+        margin-top: 20px;
+    }
+
+     /*--------------estilo a la seccion Gorras-------------*/
+
+     .gorras{
+
+        flex-flow: wrap row;
+    
+        justify-content: space-around;
+
+        img{
+
+            width:380px;
+            height:360px;
+        }
+    
+
+        
+    }
+
+     /* ------------------------------pagina SNEAKERS-----------------------------*/
+
+     .seccion_Jordan{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        .cajaJordan1{
+    
+            transition: all 0.5s ease-in-out;
+            &:hover{
+    
+                border-color: chartreuse;
+                transform: scale(1.1);
+            }
+
+        }
+    
+    }
+    .otrasMarcas{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        .otrasImagZapatilla{
+
+            transition: all 0.5s ease-in-out;
+            &:hover{
+    
+                border-color: chartreuse;
+                transform: scale(1.1);
+            }
+
+        }
+    
+    }
+    .row-yeze-2 img{
+        transition: all 0.5s ease-in-out;
+        &:hover{
+
+            border-color: chartreuse;
+            transform: scale(1.1);
+        }
+
+    }
+    .row-yeze-3 img{
+ /*-------------------- transisiones  ------------------------------*/
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+
+            border-color: chartreuse;
+            transform: scale(1.1);
+        }
+    
+    }
+     /* ----------------portada del la pagina de sneakers -----------------------*/
+        .portada{
+            display: block;
+            
+            margin-top: 40px;
+     /*-------------------- transisiones  ------------------------------*/
+            img{
+    
+                transition: all 1s ease-in-out;
+    
+                &:hover{
+    
+                    transform: rotate(360deg);
+            
+            
+                }
+            }
+        
+        }
+        /* ----------------fin de la portada del la pagina de sneakers -----------------------*/
+    .caja_Formulario{
+    
+        font-size: 15px;
+    
+    }
+
+
+    /*-----------------parte de la Pagina Mejor del verano-------------------*/
+    .cajaPrincipalmodelosVerano{
+
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        /*-------------------- transisiones  ------------------------------*/
+        .VeranoModelos{
+
+
+            transition: all 0.5s ease-in-out;
+            &:hover{
+
+                border-color: chartreuse;
+                transform: scale(1.1);
+                z-index: 30;
+         
+            }
+        }
+    
+
+    }
+    /*-----------------parte de la Pagina Mejor del INVIERNo-------------------*/
+    .cajaPrincipalmodelosInvierno{
+
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+         /*-------------------- transisiones  ------------------------------*/
+
+            .contenedor__ModelosInvierno{
+                transition: all 0.5s ease-in-out;
+
+                &:hover{
+
+                    border-color: chartreuse;
+                    transform: scale(1.1);
+                    z-index: 30;
+            
+                }
+
+
+            }
+
+
+    }
+
+
+}
+ /* ------------------footer agregadoo -------------------------*/
+
+        .nav_secu{
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+
+}

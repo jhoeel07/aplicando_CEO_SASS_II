@@ -1,0 +1,338 @@
+
+* {
+    padding: 0; /*HACER ESTO SIEMPRE POR QUE ES RECOMENDABLE*/
+    margin: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    
+}
+body{
+  
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    background-repeat: repeat;
+}
+h1{
+
+    color: brown;
+}
+.contenedorPadreSupremo{
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    display: grid;
+
+    grid-template-areas:
+    "navPrincipal"
+    "header"
+    "segundo_menu"
+    "main"
+    "nav_secu";
+  
+    color: rgb(236, 214, 185);
+    font-style: italic;
+   width: 100%;
+
+
+}
+.logo2{
+
+    display: none;
+}
+
+.header{
+
+
+    grid-area: header;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+    background-repeat: repeat;
+    padding: 30px;
+    font-size: small;
+
+
+}
+.navPrincipal{
+
+    grid-area: navPrincipal;
+ 
+ 
+ }
+.main{
+
+    grid-area: main;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+    font-size: larger;
+    color: rgb(236, 214, 185);
+    text-align: center;
+ 
+    .precios{
+
+        color: greenyellow;
+    }
+    .titulos_MainPrincipal{
+
+        margin-top: 20px;
+        text-align: center;
+        color: brown;
+    }
+
+    /*-----------------aca empieza la Pagina de Sneakers--------------------*/
+    .portada{
+        display: none;
+
+    }
+    .seccion_Jordan{
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+
+            .cajaJordan1{
+
+                margin-top: 40PX;
+                width: 410px;
+                height: auto;
+                border-radius: 10px;
+                border: solid black 5px;
+            }
+    }
+
+
+    .otrasMarcas{
+
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+
+        .otrasImagZapatilla{
+
+            margin-top: 40PX;
+            width: 410px;
+            height: auto;
+            border-radius: 10px;
+            border: solid black 5px;
+        }
+    
+    }
+    .fondo_colores_trasnision{
+
+        width: 100%;
+        background-image: url("../imag/gif/estrellas-entre-las-nubes.gif");
+        background-size: cover;
+
+        .container{
+
+            padding: 30px;
+     
+        }
+        
+      
+    }
+    /*-----------------aca TERMINA la Pagina de Sneakers--------------------*/
+
+
+    /*-----------------parte de la Pagina Mejor del verano-------------------*/
+
+    .cajaPrincipalmodelosVerano{
+
+    
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .VeranoModelos{
+    
+            margin-top: 40PX;
+            width: 410px;
+            height: auto;
+            border-radius: 10px;
+            font-size: 25px;
+            border: solid black 5px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            z-index: 20;
+        
+        }
+
+
+    }
+    .caja_Formulario{ /*sirve tanto para verano como para la de invierno*/
+
+        margin-top: 40px;
+      text-align: center;
+      color: greenyellow;
+      background-color: rgb(0, 0, 0);
+    
+    }
+
+
+    /*-----------------parte de la Pagina Mejor del Invierno-------------------*/
+
+
+    .cajaPrincipalmodelosInvierno{
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        .contenedor__ModelosInvierno{
+
+            margin-top: 40PX;
+            width: 410px;
+            height: auto;
+            border-radius: 10px;
+            border: solid black 5px;
+            z-index: 20;
+        
+        }
+    
+    }
+
+    /*-----------------parte de la Pagina de la info-------------------*/
+
+    .texto_info{
+
+        background-color: #000;
+
+        .textoAYUDA{
+    
+
+            color: rgb(255, 255, 255);
+        
+            font-size: 25px;
+         
+            font-weight: bold;
+         
+        }
+    }
+
+    .trabaja_con_nosotros{
+        margin-top: 20px;
+        background-image: url("../imag/gif/cielo-estrellado.gif");
+
+        .listaPuestosDisp{
+
+            list-style: none;
+        }
+    }
+    
+
+
+}
+
+
+
+.segundo_menu{
+
+
+    grid-area: segundo_menu;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo-nav.jpg");
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+  
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: relative;
+
+
+    .VOLVER{
+
+        display: none;
+    
+    }
+
+    button{
+
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
+        color: rgb(255, 255, 255);
+        border-radius: 15px;
+       
+        font-size: 10px;
+        height: auto;
+        width: 50px;
+    
+    
+    } 
+
+
+}
+
+// -----------este es el estilo que tiene Nuestro FOOTER-------------------
+
+.nav_secu {
+
+    grid-area: nav_secu ;
+    background-attachment: fixed;
+    background-image: url("../imag/menu/fondo_negro_ladri.jpg");
+    background-repeat: repeat;
+    border: solid  rgb(0, 0, 0) 5px ;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .nav_cont {
+        list-style: none;
+        li{
+            
+            a{
+                color: greenyellow;
+                }
+        }
+
+    }
+    .columnasFuter{
+        p{
+            color: brown;
+        }
+    }
+    
+    
+
+}
+
+
+
+/*----------------------- BOOTSTRAP------------------------- */
+
+.accordion-button {
+
+    background: chartreuse;
+}
+
+/*ESPACIOS ENTRE LAS FILAS DE LA PARETE DE SNAKERS YEZZE DRAGON BALL*/
+
+.row-yeze-3{
+
+    margin-top: 10px;
+  
+}
+
+/*----------------------- FIN BOOTSTRAP------------------------- */
+
+
+
+
+
+// -----------------------------aca estan los imports y Variables-------------------
+@import "_Variables";
+@import "_Tablet";
+@import "_Desktop";
+
+
+

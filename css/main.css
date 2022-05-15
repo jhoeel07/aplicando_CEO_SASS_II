@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  /*HACER ESTO SIEMPRE POR QUE ES RECOMENDABLE*/
+  margin: 0;
+  box-sizing: border-box;
+  font-style: italic; }
+
+body {
+  background-attachment: fixed;
+  background-image: url("../imag/menu/fondo-nav.jpg");
+  background-repeat: repeat; }
+
+h1 {
+  color: brown; }
+
+.contenedorPadreSupremo {
+  background-image: url("../imag/menu/fondo-nav.jpg");
+  display: grid;
+  grid-template-areas: "navPrincipal"
+ "header"
+ "segundo_menu"
+ "main"
+ "nav_secu";
+  color: #ecd6b9;
+  font-style: italic;
+  width: 100%; }
+
+.logo2 {
+  display: none; }
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-attachment: fixed;
+  background-image: url("../imag/menu/fondo-nav.jpg");
+  background-repeat: repeat;
+  padding: 30px;
+  font-size: small; }
+
+.navPrincipal {
+  grid-area: navPrincipal; }
+
+.main {
+  grid-area: main;
+  background-attachment: fixed;
+  background-image: url("../imag/menu/fondo-nav.jpg");
+  font-size: larger;
+  color: #ecd6b9;
+  text-align: center;
+  /*-----------------aca empieza la Pagina de Sneakers--------------------*/
+  /*-----------------aca TERMINA la Pagina de Sneakers--------------------*/
+  /*-----------------parte de la Pagina Mejor del verano-------------------*/
+  /*-----------------parte de la Pagina Mejor del Invierno-------------------*/
+  /*-----------------parte de la Pagina de la info-------------------*/ }
+  .main .precios {
+    color: greenyellow; }
+  .main .titulos_MainPrincipal {
+    margin-top: 20px;
+    text-align: center;
+    color: brown; }
+  .main .portada {
+    display: none; }
+  .main .seccion_Jordan {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    .main .seccion_Jordan .cajaJordan1 {
+      margin-top: 40PX;
+      width: 410px;
+      height: auto;
+      border-radius: 10px;
+      border: solid black 5px; }
+  .main .otrasMarcas {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    .main .otrasMarcas .otrasImagZapatilla {
+      margin-top: 40PX;
+      width: 410px;
+      height: auto;
+      border-radius: 10px;
+      border: solid black 5px; }
+  .main .fondo_colores_trasnision {
+    width: 100%;
+    background-image: url("../imag/gif/estrellas-entre-las-nubes.gif");
+    background-size: cover; }
+    .main .fondo_colores_trasnision .container {
+      padding: 30px; }
+  .main .cajaPrincipalmodelosVerano {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .main .cajaPrincipalmodelosVerano .VeranoModelos {
+      margin-top: 40PX;
+      width: 410px;
+      height: auto;
+      border-radius: 10px;
+      font-size: 25px;
+      border: solid black 5px;
+      color: black;
+      font-weight: bold;
+      z-index: 20; }
+  .main .caja_Formulario {
+    /*sirve tanto para verano como para la de invierno*/
+    margin-top: 40px;
+    text-align: center;
+    color: greenyellow;
+    background-color: black; }
+  .main .cajaPrincipalmodelosInvierno {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center; }
+    .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno {
+      margin-top: 40PX;
+      width: 410px;
+      height: auto;
+      border-radius: 10px;
+      border: solid black 5px;
+      z-index: 20; }
+  .main .texto_info {
+    background-color: #000; }
+    .main .texto_info .textoAYUDA {
+      color: white;
+      font-size: 25px;
+      font-weight: bold; }
+  .main .trabaja_con_nosotros {
+    margin-top: 20px;
+    background-image: url("../imag/gif/cielo-estrellado.gif"); }
+    .main .trabaja_con_nosotros .listaPuestosDisp {
+      list-style: none; }
+
+.segundo_menu {
+  grid-area: segundo_menu;
+  background-attachment: fixed;
+  background-image: url("../imag/menu/fondo-nav.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  position: relative; }
+  .segundo_menu .VOLVER {
+    display: none; }
+  .segundo_menu button {
+    background: black;
+    background: radial-gradient(circle, black 4%, #292f2f 100%);
+    color: white;
+    border-radius: 15px;
+    font-size: 10px;
+    height: auto;
+    width: 50px; }
+
+.nav_secu {
+  grid-area: nav_secu;
+  background-attachment: fixed;
+  background-image: url("../imag/menu/fondo_negro_ladri.jpg");
+  background-repeat: repeat;
+  border: solid black 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .nav_secu .nav_cont {
+    list-style: none; }
+    .nav_secu .nav_cont li a {
+      color: greenyellow; }
+  .nav_secu .columnasFuter p {
+    color: brown; }
+
+/*----------------------- BOOTSTRAP------------------------- */
+.accordion-button {
+  background: chartreuse; }
+
+/*ESPACIOS ENTRE LAS FILAS DE LA PARETE DE SNAKERS YEZZE DRAGON BALL*/
+.row-yeze-3 {
+  margin-top: 10px; }
+
+/*----------------------- FIN BOOTSTRAP------------------------- */
+@media screen and (min-width: 768px) {
+  .contenedorPadreSupremo {
+    grid-template-areas: "navPrincipal navPrincipal navPrincipal"
+ "header header header"
+ "segundo_menu main main"
+ "nav_secu nav_secu nav_secu"; }
+  .header {
+    font-size: large; }
+  .mas_vendidos_fotos {
+    width: 350px; }
+  .segundo_menu {
+    flex-direction: column;
+    justify-content: start;
+    border-right: solid #000;
+    background-image: url(../imag/menu/fondo.png); }
+    .segundo_menu button {
+      margin: 20px 0px 20px 0px;
+      z-index: 10;
+      border-radius: 0;
+      font-size: 20px;
+      height: 50px;
+      width: 100%; }
+    .segundo_menu h3 {
+      font-size: 50px;
+      margin-top: 20px; }
+    .segundo_menu .VOLVER {
+      display: block;
+      position: fixed;
+      z-index: 1; }
+  /*-----------------parte de la Pagina Mejor del verano-------------------*/
+  .cajaPrincipalmodelosVerano {
+    align-items: center; }
+  .caja_Formulario {
+    font-size: 30px; } }
+
+@media screen and (min-width: 1024px) {
+  .contenedorPadreSupremo {
+    grid-template-areas: "navPrincipal navPrincipal navPrincipal"
+ "logo2 header header"
+ "segundo_menu main main"
+ "nav_secu nav_secu nav_secu"; }
+  .segundo_menu {
+    grid-area: segundo_menu;
+    flex-direction: column;
+    justify-content: start;
+    border-right: solid #000;
+    background-image: url(../imag/menu/fondo.png); }
+    .segundo_menu button {
+      background: black;
+      background: radial-gradient(circle, black 4%, #292f2f 100%);
+      border-radius: 0;
+      font-size: 20px;
+      height: 50px;
+      width: 100%; }
+  button {
+    background: black;
+    background: radial-gradient(circle, black 4%, #292f2f 100%);
+    border-radius: 0;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    color: white; }
+  /* ----------------------------------------MODIFICACIONES A BOOSTRAP----------------------------------- */
+  .header {
+    font-size: xx-large; }
+  /*----------------------------- animacionnn--------------------- */
+  .logo2 {
+    display: block;
+    grid-area: logo2;
+    animation-name: movimiento-logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s; }
+  @keyframes movimiento-logo {
+    25% {
+      transform: scale(1.1); }
+    50% {
+      transform: rotateX(360deg); } }
+  /*----------------------------- FINAL animacionnn--------------------- */
+  .main {
+    /* ----------------------------------------MODIFICACIONES A BOOSTRAP FIN ----------------------------------- */
+    /*--------------estilo a la seccion Gorras-------------*/
+    /* ------------------------------pagina SNEAKERS-----------------------------*/
+    /* ----------------portada del la pagina de sneakers -----------------------*/
+    /* ----------------fin de la portada del la pagina de sneakers -----------------------*/
+    /*-----------------parte de la Pagina Mejor del verano-------------------*/
+    /*-----------------parte de la Pagina Mejor del INVIERNo-------------------*/}
+    .main .carousel {
+      width: 400px;
+      height: auto;
+      margin: auto;
+      transition: 2s ease; }
+    .main .container {
+      margin-top: 20PX; }
+    .main .accordion {
+      margin-bottom: 20px; }
+      .main .accordion .accordion-body {
+        background: black; }
+      .main .accordion .accordion-button {
+        background: chartreuse; }
+    .main .caja_Formulario {
+      font-size: 15px; }
+    .main .table {
+      margin-top: 20px; }
+    .main .gorras {
+      flex-flow: wrap row;
+      justify-content: space-around; }
+      .main .gorras img {
+        width: 380px;
+        height: 360px; }
+    .main .seccion_Jordan {
+      flex-flow: row wrap;
+      justify-content: space-evenly; }
+      .main .seccion_Jordan .cajaJordan1 {
+        transition: all 0.5s ease-in-out; }
+        .main .seccion_Jordan .cajaJordan1:hover {
+          border-color: chartreuse;
+          transform: scale(1.1); }
+    .main .otrasMarcas {
+      flex-flow: row wrap;
+      justify-content: space-evenly; }
+      .main .otrasMarcas .otrasImagZapatilla {
+        transition: all 0.5s ease-in-out; }
+        .main .otrasMarcas .otrasImagZapatilla:hover {
+          border-color: chartreuse;
+          transform: scale(1.1); }
+    .main .row-yeze-2 img {
+      transition: all 0.5s ease-in-out; }
+      .main .row-yeze-2 img:hover {
+        border-color: chartreuse;
+        transform: scale(1.1); }
+    .main .row-yeze-3 img {
+      /*-------------------- transisiones  ------------------------------*/
+      transition: all 0.5s ease-in-out; }
+      .main .row-yeze-3 img:hover {
+        border-color: chartreuse;
+        transform: scale(1.1); }
+    .main .portada {
+      display: block;
+      margin-top: 40px;
+      /*-------------------- transisiones  ------------------------------*/ }
+      .main .portada img {
+        transition: all 1s ease-in-out; }
+        .main .portada img:hover {
+          transform: rotate(360deg); }
+    .main .caja_Formulario {
+      font-size: 15px; }
+    .main .cajaPrincipalmodelosVerano {
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      /*-------------------- transisiones  ------------------------------*/ }
+      .main .cajaPrincipalmodelosVerano .VeranoModelos {
+        transition: all 0.5s ease-in-out; }
+        .main .cajaPrincipalmodelosVerano .VeranoModelos:hover {
+          border-color: chartreuse;
+          transform: scale(1.1);
+          z-index: 30; }
+    .main .cajaPrincipalmodelosInvierno {
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      /*-------------------- transisiones  ------------------------------*/ }
+      .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno {
+        transition: all 0.5s ease-in-out; }
+        .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno:hover {
+          border-color: chartreuse;
+          transform: scale(1.1);
+          z-index: 30; } 
+  /* ------------------footer agregadoo -------------------------*/
+  .nav_secu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; } }
