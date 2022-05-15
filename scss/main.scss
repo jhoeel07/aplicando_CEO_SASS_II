@@ -150,14 +150,11 @@ h1{
 
         .VeranoModelos{
     
-            margin-top: 40PX;
+            margin-top: 40px;
             width: 410px;
             height: auto;
             border-radius: 10px;
-            font-size: 25px;
             border: solid black 5px;
-            color: rgb(0, 0, 0);
-            font-weight: bold;
             z-index: 20;
         
         }
@@ -179,18 +176,13 @@ h1{
 
     .cajaPrincipalmodelosInvierno{
 
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-
+        // --------------------ACA AGREGUEEE EL PRIMER @EXTEND PARA QUE TAMBIEN ME FUNCIONE EL SEGUNDO---------------------
+  
+        @extend .cajaPrincipalmodelosVerano;
         .contenedor__ModelosInvierno{
 
-            margin-top: 40PX;
-            width: 410px;
-            height: auto;
-            border-radius: 10px;
-            border: solid black 5px;
-            z-index: 20;
+            // --------------------ACA AGREGUEEE EL SEGUNDO @EXTEND -------------------------------------------------------
+            @extend.VeranoModelos;
         
         }
     

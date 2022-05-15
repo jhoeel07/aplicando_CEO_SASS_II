@@ -86,20 +86,17 @@ h1 {
     background-size: cover; }
     .main .fondo_colores_trasnision .container {
       padding: 30px; }
-  .main .cajaPrincipalmodelosVerano {
+  .main .cajaPrincipalmodelosVerano, .main .cajaPrincipalmodelosInvierno {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center; }
-    .main .cajaPrincipalmodelosVerano .VeranoModelos {
-      margin-top: 40PX;
+    .main .cajaPrincipalmodelosVerano .VeranoModelos, .main .cajaPrincipalmodelosInvierno .VeranoModelos, .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno {
+      margin-top: 40px;
       width: 410px;
       height: auto;
       border-radius: 10px;
-      font-size: 25px;
       border: solid black 5px;
-      color: black;
-      font-weight: bold;
       z-index: 20; }
   .main .caja_Formulario {
     /*sirve tanto para verano como para la de invierno*/
@@ -107,17 +104,6 @@ h1 {
     text-align: center;
     color: greenyellow;
     background-color: black; }
-  .main .cajaPrincipalmodelosInvierno {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center; }
-    .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno {
-      margin-top: 40PX;
-      width: 410px;
-      height: auto;
-      border-radius: 10px;
-      border: solid black 5px;
-      z-index: 20; }
   .main .texto_info {
     background-color: #000; }
     .main .texto_info .textoAYUDA {
@@ -210,7 +196,7 @@ h1 {
       position: fixed;
       z-index: 1; }
   /*-----------------parte de la Pagina Mejor del verano-------------------*/
-  .cajaPrincipalmodelosVerano {
+  .cajaPrincipalmodelosVerano, .main .cajaPrincipalmodelosInvierno {
     align-items: center; }
   .caja_Formulario {
     font-size: 30px; } }
@@ -221,19 +207,6 @@ h1 {
  "logo2 header header"
  "segundo_menu main main"
  "nav_secu nav_secu nav_secu"; }
-  .segundo_menu {
-    grid-area: segundo_menu;
-    flex-direction: column;
-    justify-content: start;
-    border-right: solid #000;
-    background-image: url(../imag/menu/fondo.png); }
-    .segundo_menu button {
-      background: black;
-      background: radial-gradient(circle, black 4%, #292f2f 100%);
-      border-radius: 0;
-      font-size: 20px;
-      height: 50px;
-      width: 100%; }
   button {
     background: black;
     background: radial-gradient(circle, black 4%, #292f2f 100%);
@@ -242,6 +215,15 @@ h1 {
     height: 50px;
     width: 100%;
     color: white; }
+  .segundo_menu {
+    grid-area: segundo_menu;
+    flex-direction: column;
+    justify-content: start;
+    border-right: solid #000;
+    background-image: url(../imag/menu/fondo.png); }
+    .segundo_menu button {
+      border-radius: 100px;
+      border-color: aquamarine; }
   /* ----------------------------------------MODIFICACIONES A BOOSTRAP----------------------------------- */
   .header {
     font-size: xx-large; }
@@ -266,7 +248,7 @@ h1 {
     /* ----------------portada del la pagina de sneakers -----------------------*/
     /* ----------------fin de la portada del la pagina de sneakers -----------------------*/
     /*-----------------parte de la Pagina Mejor del verano-------------------*/
-    /*-----------------parte de la Pagina Mejor del INVIERNo-------------------*/}
+    /*-----------------parte de la Pagina Mejor del INVIERNo-------------------*/ }
     .main .carousel {
       width: 400px;
       height: auto;
@@ -327,13 +309,13 @@ h1 {
           transform: rotate(360deg); }
     .main .caja_Formulario {
       font-size: 15px; }
-    .main .cajaPrincipalmodelosVerano {
+    .main .cajaPrincipalmodelosVerano, .main .cajaPrincipalmodelosInvierno {
       flex-flow: row wrap;
       justify-content: space-evenly;
       /*-------------------- transisiones  ------------------------------*/ }
-      .main .cajaPrincipalmodelosVerano .VeranoModelos {
+      .main .cajaPrincipalmodelosVerano .VeranoModelos, .main .cajaPrincipalmodelosInvierno .VeranoModelos, .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno {
         transition: all 0.5s ease-in-out; }
-        .main .cajaPrincipalmodelosVerano .VeranoModelos:hover {
+        .main .cajaPrincipalmodelosVerano .VeranoModelos:hover, .main .cajaPrincipalmodelosInvierno .VeranoModelos:hover, .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno:hover {
           border-color: chartreuse;
           transform: scale(1.1);
           z-index: 30; }
@@ -346,9 +328,8 @@ h1 {
         .main .cajaPrincipalmodelosInvierno .contenedor__ModelosInvierno:hover {
           border-color: chartreuse;
           transform: scale(1.1);
-          z-index: 30; } 
+          z-index: 30; }
   /* ------------------footer agregadoo -------------------------*/
   .nav_secu {
-    display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly; } }

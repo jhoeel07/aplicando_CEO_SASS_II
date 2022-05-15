@@ -11,22 +11,7 @@
          "nav_secu nav_secu nav_secu";
 
     }
-    .segundo_menu{
-        grid-area: segundo_menu;
-        flex-direction: column;
-        justify-content: start;
-        border-right: solid #000;
-        background-image: url(../imag/menu/fondo.png);
-        button{
-            background: rgb(0,0,0);
-            background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
-            border-radius: 0;
-            font-size: 20px;
-            height: 50px;
-            width: 100%;
-        }
 
-    }
     button{
         background: rgb(0,0,0);
         background: radial-gradient(circle, rgba(0,0,0,1) 4%, rgba(41,47,47,1) 100%);
@@ -36,6 +21,24 @@
         width: 100%;
         color: rgb(255, 255, 255);
     }
+
+ 
+
+    .segundo_menu{
+        grid-area: segundo_menu;
+        flex-direction: column;
+        justify-content: start;
+        border-right: solid #000;
+        background-image: url(../imag/menu/fondo.png);
+        button{
+          
+        
+            border-radius: 100px ;
+            border-color: aquamarine;
+        }
+
+    }
+
    /* ----------------------------------------MODIFICACIONES A BOOSTRAP----------------------------------- */
    .header{
 
@@ -137,11 +140,23 @@
         
     }
 
+
+        // ---------------------------SE INCLUYE MIXIN------------------------------
+    @mixin estadoFyC( $flowC, $JustifyC){
+
+        flex-flow: $flowC;
+    
+        justify-content:$JustifyC;
+
+
+    }
+
      /* ------------------------------pagina SNEAKERS-----------------------------*/
 
      .seccion_Jordan{
-        flex-flow: row wrap;
-        justify-content: space-evenly;
+
+        // ---------------------------SE INCLUYE MIXIN------------------------------
+       @include estadoFyC( row wrap, space-evenly);
         .cajaJordan1{
     
             transition: all 0.5s ease-in-out;
@@ -155,9 +170,7 @@
     
     }
     .otrasMarcas{
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-
+        @include estadoFyC( row wrap, space-evenly);
         .otrasImagZapatilla{
 
             transition: all 0.5s ease-in-out;
@@ -220,8 +233,7 @@
     /*-----------------parte de la Pagina Mejor del verano-------------------*/
     .cajaPrincipalmodelosVerano{
 
-        flex-flow: row wrap;
-        justify-content: space-evenly;
+        @include estadoFyC( row wrap, space-evenly);
         /*-------------------- transisiones  ------------------------------*/
         .VeranoModelos{
 
@@ -240,9 +252,8 @@
     }
     /*-----------------parte de la Pagina Mejor del INVIERNo-------------------*/
     .cajaPrincipalmodelosInvierno{
-
-        flex-flow: row wrap;
-        justify-content: space-evenly;
+        
+        @include estadoFyC( row wrap, space-evenly); 
 
          /*-------------------- transisiones  ------------------------------*/
 
@@ -269,9 +280,11 @@
 
         .nav_secu{
 
-            display: flex;
+          
             flex-flow: row wrap;
             justify-content: space-evenly;
+          
+
         }
 
 
